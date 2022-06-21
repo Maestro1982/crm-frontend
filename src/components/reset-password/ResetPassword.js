@@ -5,7 +5,7 @@ import './resetPassword.css';
 
 const ResetPassword = ({
   handleOnChange,
-  handleOnSubmit,
+  handleOnResetSubmit,
   email,
   handleLoginFormSwitch,
 }) => {
@@ -16,7 +16,7 @@ const ResetPassword = ({
           <Col>
             <h1 className='login-title'>Reset Password</h1>
             <hr className='horizontal-line' />
-            <Form autoComplete='off' onSubmit={handleOnSubmit}>
+            <Form autoComplete='off' onSubmit={handleOnResetSubmit}>
               <Form.Group>
                 <Form.Label className='login-lbl-text'>
                   Email Address
@@ -55,7 +55,7 @@ const ResetPassword = ({
 /* We use this so that on runtime it checks if the props are the sameone we passed in the component => Login */
 ResetPassword.propTypes = {
   handleOnChange: PropTypes.func.isRequired,
-  handleOnSubmit: PropTypes.func.isRequired,
+  handleOnResetSubmit: PropTypes.func.isRequired,
   handleLoginFormSwitch: PropTypes.func.isRequired,
   email: PropTypes.string.isRequired,
 };

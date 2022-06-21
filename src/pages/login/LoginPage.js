@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Login from '../../components/login/Login';
-import ResetPassword from '../../components/login/reset-password/ResetPassword';
+import ResetPassword from '../../components/reset-password/ResetPassword';
 import './loginPage.css';
 
 const LoginPage = () => {
