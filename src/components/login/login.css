@@ -1,0 +1,31 @@
+.login-container {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-title {
+  color: #2f4858;
+  margin-bottom: 0;
+}
+
+.horizontal-line {
+  color: #f26419;
+  margin-top: 8px;
+}
+
+.login-lbl-text {
+  color: #2f4858;
+  font-weight: 500;
+}
+
+.login-input {
+  margin-bottom: 15px;
+}
+
+.link-forget-password {
+  color: #2f4858;
+  text-decoration: none;
+}
+
+.link-forget-password:hover {
+  text-decoration: underline;
+}

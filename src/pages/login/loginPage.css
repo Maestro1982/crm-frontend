@@ -1,0 +1,11 @@
+.login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #33658a;
+}
+.container-fluid {
+  border-radius: 5px;
+  box-shadow: 3px 3px 6px 1px black;
+}
