@@ -6,7 +6,13 @@ const Header = () => {
   return (
     <Navbar collapseOnSelect variant='dark' expand='md'>
       <Navbar.Brand>
-        <img src={Logo} alt='Logo' width='48px' height='48px' />
+        <img
+          src={Logo}
+          alt='Logo'
+          width='48px'
+          height='48px'
+          style={{ marginLeft: '10px' }}
+        />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls='basic-navbar-nav' />
       <Navbar.Collapse id='basic-navbar-nav'>
