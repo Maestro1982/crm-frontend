@@ -15,7 +15,7 @@ const Login = ({
       <Container className='login-container'>
         <Row>
           <Col>
-            <h1 className='login-title'>Client Login</h1>
+            <h2 className='login-title'>Client Login</h2>
             <hr className='horizontal-line' />
             <Form autoComplete='off' onSubmit={handleOnSubmit}>
               <Form.Group>

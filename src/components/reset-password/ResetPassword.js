@@ -11,18 +11,18 @@ const ResetPassword = ({
 }) => {
   return (
     <div>
-      <Container className='login-container'>
+      <Container className='reset-container'>
         <Row>
           <Col>
-            <h1 className='login-title'>Reset Password</h1>
+            <h2 className='reset-title'>Change Password</h2>
             <hr className='horizontal-line' />
             <Form autoComplete='off' onSubmit={handleOnResetSubmit}>
               <Form.Group>
-                <Form.Label className='login-lbl-text'>
+                <Form.Label className='email-lbl-text'>
                   Email Address
                 </Form.Label>
                 <Form.Control
-                  className='login-input'
+                  className='reset-input'
                   type='email'
                   name='email'
                   value={email}
@@ -31,7 +31,7 @@ const ResetPassword = ({
                   onChange={handleOnChange}
                 />
               </Form.Group>
-              <Button type='submit'>Reset Password</Button>
+              <Button type='submit'>Change Password</Button>
             </Form>
             <hr className='horizontal-line' />
           </Col>
