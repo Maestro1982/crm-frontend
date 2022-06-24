@@ -1,0 +1,17 @@
+h5 {
+  color: #f6ae2d;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.subject,
+.date,
+.status {
+  color: #33658a;
+  font-weight: 700;
+}
+
+.horizontal-line {
+  color: #2f4858;
+  margin-top: 20px;
+}
