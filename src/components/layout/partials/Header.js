@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
-import Logo from '../../../assets/images/logo.png';
+import Logo from '../../../assets/images/crm-logo.png';
 
 const Header = () => {
   return (
@@ -9,8 +9,8 @@ const Header = () => {
         <img
           src={Logo}
           alt='Logo'
-          width='48px'
-          height='48px'
+          width='50px'
+          height='50px'
           style={{ marginLeft: '10px' }}
         />
       </Navbar.Brand>
