@@ -1,13 +1,13 @@
 import React from 'react';
-import { Navigate, Outlet } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 import DefaultLayout from '../../layout/DefaultLayout';
 
-const isAuth = false;
+const isAuth = true;
 
 const PrivateRoute = ({ children, ...rest }) => {
   return isAuth ? (
     <>
-      <DefaultLayout /> <Outlet />
+      <DefaultLayout />
     </>
   ) : (
     <Navigate to='/' />

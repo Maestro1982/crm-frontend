@@ -1,5 +1,4 @@
 import './App.css';
-import DefaultLayout from './layout/DefaultLayout';
 import DashboardPage from './pages/dashboard/DashboardPage';
 import LoginPage from './pages/login/LoginPage';
 import AddTicketPage from './pages/new-ticket/AddTicketPage';
