@@ -15,7 +15,7 @@ const Login = ({
       <Row>
         <Col>
           <h2 className='login-title'>Client Login</h2>
-          <hr className='horizontal-line' />
+          <hr />
           <Form autoComplete='off' onSubmit={handleOnSubmit}>
             <Form.Group>
               <Form.Label className='login-lbl-text'>Email Address</Form.Label>
@@ -43,7 +43,7 @@ const Login = ({
             </Form.Group>
             <Button type='submit'>Login</Button>
           </Form>
-          <hr className='horizontal-line' />
+          <hr />
         </Col>
       </Row>
       <Row>

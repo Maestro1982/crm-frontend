@@ -9,7 +9,7 @@ const DashboardPage = () => {
     <Container>
       <Row>
         <Col>
-          <BreadcrumbBootstrap page='dashboard' />
+          <BreadcrumbBootstrap page='Dashboard' />
         </Col>
       </Row>
       <Row>

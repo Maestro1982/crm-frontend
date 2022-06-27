@@ -6,7 +6,6 @@
 
 header {
   grid-area: 'header';
-  background: #33658a;
 }
 
 main {
