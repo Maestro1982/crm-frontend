@@ -4,6 +4,7 @@ import BreadcrumbBootstrap from '../../components/breadcrumb/BreadcrumbBootstrap
 import SearchForm from '../../components/search-form/SearchForm';
 import TicketTable from '../../components/ticket-table/TicketTable';
 import tickets from '../../assets/data/dummy-tickets.json';
+import { Link } from 'react-router-dom';
 
 const TicketListPage = () => {
   const [str, setStr] = useState('');
@@ -34,7 +35,9 @@ const TicketListPage = () => {
       </Row>
       <Row className='mt-4'>
         <Col>
-          <Button variant='primary'>Add New Ticket</Button>
+          <Link to='/add-ticket'>
+            <Button variant='primary'>Add New Ticket</Button>
+          </Link>
         </Col>
         <Col className='text-end'>
           <SearchForm handleOnChange={handleOnChange} str={str} />

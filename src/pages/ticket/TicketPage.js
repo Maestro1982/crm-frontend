@@ -5,14 +5,24 @@ import tickets from '../../assets/data/dummy-tickets.json';
 import './ticketPage.css';
 import MessageHistory from '../../components/message-history/MessageHistory';
 import UpdateTicket from '../../components/update-ticket/UpdateTicket';
+import { useParams } from 'react-router-dom';
 
-const ticket = tickets[0];
+//const ticket = tickets[0];
 
 const TicketPage = () => {
+  const { id } = useParams();
   const [message, setMessage] = useState('');
+  const [ticket, setTicket] = useState('');
 
   /* This will run everytime there's a change in the message */
-  useEffect(() => {}, [message]);
+  useEffect(() => {
+    for (let i = 0; i < tickets.length; i++) {
+      if (tickets[i].id === id) {
+        console.log(setTicket(tickets[i]));
+        continue;
+      }
+    }
+  }, [message, id]);
 
   const handleOnChange = (e) => {
     setMessage(e.target.value);
@@ -42,7 +52,7 @@ const TicketPage = () => {
       </Row>
       <Row className='mt-4'>
         <Col>
-          <MessageHistory message={ticket.history} />
+          {ticket.history && <MessageHistory message={ticket.history} />}
         </Col>
       </Row>
       <hr className='horizontal-line' />
